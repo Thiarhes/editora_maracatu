@@ -39,7 +39,7 @@ nav .img-link{
 }
 
 nav img{
-    width: 150px;
+    width: 170px;
 }
 
 nav .button-link{
@@ -97,7 +97,7 @@ main .head-large{
 }
 
 .in-second-header{
-    font-size: min(3.5vw, 1.8rem);
+    font-size: min(3.5vw, 1.3rem);
     text-align: center;
 }
 
@@ -194,6 +194,12 @@ footer .text{
 
 
 @media (max-width:912px){
+    nav .img-link{
+        margin-right: 30px;
+    }
+    nav img{
+        width: 150px;
+    }
     section .section-cards{
         display: flex;
         flex-direction: column;

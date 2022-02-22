@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/sac.css">
+        <title>Document</title>
+        <script src="https://kit.fontawesome.com/9accb34635.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <div id="container">
+
+            <img class="fundo" src="./img/fundo.jpg" title="Photo by Jess Bailey on Unsplash">
+
+            <header>
+                <nav>
+
+                    <a href="index.html" class="img-link">
+                        <img src="./img/logo.png" alt="logo">
+                    </a>
+
+                    <a href="index.html" class="button-link">HOME</a>
+
+                </nav>
+            </header>
+
+            <section>
+                <h2>
+                    Teve problema com um de nossos produtos ou atendimento?<br> No formulário abaixo você pode nos enviar sua reclamação e/ou sugestão
+                </h2>
+            </section>
+
+            <div id="form">
+
+                <form class="form" action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+                    <input type="hidden" name="orgid" value="00D8c000004sgon">
+                    <input type="hidden" name="retURL" value="http://">
+
+                    <div class="input-group">
+                        <label for="name">Nome do contato</label>
+                        <input id="name" maxlength="80" name="name" size="20" type="text" required/>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input id="email" maxlength="80" name="email" size="20" type="text" required/>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="phone">Telefone</label>
+                        <input id="phone" maxlength="40" name="phone" size="20" type="text"/>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="description">Em que podemos ajudar?</label>
+                        <textarea name="description" required></textarea>
+                    </div>
+
+                    <div class="button">
+                        <input type="submit" name="submit">
+                    </div>
+
+                </form>
+
+
+            </div>
+
+            <footer>
+
+                <div class="text">
+                    <p>Siga a
+                        <strong>&#174;Soulcode Academy</strong>
+                        nas redes sociais
+                    </p>
+                </div>
+
+                <div class="icons">
+                    <a href="https://www.instagram.com/soulcodeacademy/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/company/soulcodeacademy/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+
+                    <a href="https://twitter.com/SoulCodeAcademy?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/SoulCodeAcademy" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

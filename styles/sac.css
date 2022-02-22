@@ -6,14 +6,23 @@
 
 body{
     font-family: "Open Sans",sans-serif;
-    /* Photo by Jess Bailey on Unsplash */
-    background-image: url('../img/fundo.jpg');
+    
+    /* background-image: url('../img/fundo.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     color: #003057;
 }
 
+img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
 #container{
+    position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -22,13 +31,15 @@ body{
 }
 
 header{
+    position: relative;
     height: 100px;
     width: 100%;
+    margin-bottom: 10px;
     background: #fff;
-    margin-bottom: 100px;
 }
 
 nav{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,22 +47,25 @@ nav{
 }
 
 nav .img-link{
+    position: relative;
     margin-left: 50px;
     text-decoration: none;
 }
 
 nav img{
+    position: relative;
     width: 170px;
 }
 
 nav .button-link{
+    position: relative;
     margin-right: 50px;
     text-decoration: none;
+    font-size: min(4vw, 1.2rem);
     font-weight: 600;
     text-transform: uppercase;
     color: #003057;
     opacity: 0.8;
-    font-size: min(4vw, 1.2rem);
     transition: 0.5s ease-in-out;
 }
 
@@ -60,25 +74,43 @@ nav .button-link:hover{
     transition: 0.3s;
 }
 
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    text-align: center;
+}
 section h2{
-    background: #F19820;
-    border: 1px solid red;
+    position: relative;
+    width: 100%;
+    max-width: 60%;
+    padding: 20px;
+    font-size: min(4.5vw, 1.4rem);
 }
 
 #form{
+    position: relative;
     width: 100%;
     max-width: 350px;
+    height: 450px;
     background: rgba(231, 231, 226, 0.9);
     color: #003057;
     border-radius: 10px;
     padding: 5px;
     box-shadow: 0 15px 25px rgba(0,0,0,0.4);
     backdrop-filter: blur(0.3px);
-    margin-bottom: 100px;
+    margin-bottom: 90px;
+    z-index: 2;
 }
 
 #form .form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 10px;
+    height: 400px;
 }
 
 .input-group{
@@ -113,7 +145,7 @@ section h2{
 .input-email label{
     display: block;
     margin-left: 25px;
-    font-size: min(vw, 1rem);
+    font-size: min(4vw, 1rem);
 }
 
 .input-email input{
@@ -132,41 +164,11 @@ section h2{
     outline: none;
 }
 
-.input-select{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 25px;
-    margin-bottom: 20px;
-    width: 55%;
-}
-
-.input-select select{
-    border-radius: 5px;
-    width: 100%;
-    max-width: 120px;
-    border: none;
-    outline: none;
-    background: rgba(247, 142, 5, 0.29);
-    text-transform: uppercase;
-    text-align: center;
-    color: #003057;
-    padding: 5px;
-    transition: 0.8s ease-in-out;
-}
-
-.input-select select:hover{
-    background: rgb(231, 164, 77);
-    border-radius: 15px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
 .input-group textarea{
     border-radius: 7px;
     outline: none;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     width: 82%;
     margin-left: 25px;
     color: #003057;
@@ -200,6 +202,7 @@ section h2{
 }
 
 footer{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -212,10 +215,12 @@ footer{
 }
 
 footer .text{
+    position: relative;
     margin-bottom: 10px;
 }
 
 .icons a{
+    position: relative;
     font-size: 24px;
     margin-right: 10px;
     text-decoration: none;
@@ -230,90 +235,57 @@ footer .text{
 
 
 
-@media(min-width:768px) and (max-width:1024px){
-    footer{
-        margin-top: 30px;
-    }
-    #form{
-        max-width: 380px;
-        padding: 5px;
-        margin-top: 30px;
-    }
-    #form .form{
-        margin: 20px; 
-    }
-    
-}
-@media(min-width:820px) and (max-width:1180px){
-    footer{
-        margin-top: 70px;
-    }
-    #form{
-        max-width: 420px;
-        padding: 5px;
-        margin-top: 50px;
-    }
-    #form .form{
-        margin: 20px; 
-    }
-    
-}
+
 @media(max-width:912px) {
+    #container{
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .fundo{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+        opacity: 0.8;
+    }
     header{
+        position: relative;
         height: 90px;
     }
+    nav{
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+    }
     nav img{
+        position: relative;
         width: 150px;
     }
     footer{
-        margin-top: 100px;
+        position: relative;
+        margin-top: 50px;
         height: 140px;
     }
     .icons a{
+        position: relative;
         font-size: 30px;
     }
     #form{
-        max-width: 400px;
+        position: relative;
+        max-width: 340px;
         max-height: 950px;
         padding: 5px;
-        margin-top: 100px;
     }
     #form .form{
+        position: relative;
         margin: 20px; 
-    }
-    .input-select select{
-        max-width: 150px;
-    }
-    
-}
-@media(min-width:1440px){
-    header{
-        height: 130px;
-    }
-    nav img{
-        width: 230px;
-    }
-    footer{
-        margin-top: 260px;
-        height: 140px;
-    }
-    .icons a{
-        font-size: 30px;
-    }
-    #form{
-        max-width: 540px;
-        max-height: 950px;
-        padding: 5px;
-        margin-top: 150px;
-    }
-    #form .form{
-        margin: 20px; 
-    }
-    .input-group label{
-        font-size: 30px;
-    }
-    .input-email label{
-        font-size: 30px;
     }
     .input-select{
         font-size: 30px;
@@ -326,6 +298,6 @@ footer .text{
         font-size: 30px;
     }
     .button input{
-        font-size: 20px;    
+        position: relative; 
     }
 }
