@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open-sans', sans-serif;
+    color: #003057;
+    box-sizing: border-box;
+    background-image: url('../img/lendo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    background: #fff;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+nav .img-link{
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+nav img{
+    width: 150px;
+}
+
+nav .button-link{
+    margin-right: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #003057;
+    opacity: 0.8;
+    transition: 0.5s ease-in-out;
+}
+
+nav .button-link:hover{
+    color: #38678b;
+    transition: 0.3s;
+}
+
+main{
+    /* background: rgba(241, 152, 32, 0.4); */
+    background: rgba(0, 50, 90, 0.5);
+    height: 450px;
+    color: #ff9100;
+}
+
+main .head-large{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.head-large h1{
+    width: 100%;
+    max-width: 60%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.head-large h3{
+    text-align: center;
+}
+
+.strong-text{
+    color: #fccfa2;
+    /* color: #011e35; */
+    font-size: 26px;
+}
+
+#second-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    background: #F19820;
+}
+
+.in-second-header{
+    font-size: 24px;
+    text-align: center;
+}
+
+section{
+    background: #fff;
+}
+
+section .mid-title{
+    margin: 120px 0 120px 90px;
+    font-size: 48px;
+}
+
+section .section-cards{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+section .in-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    padding: 20px;
+    -moz-box-shadow: 0 0 5px #999;
+    -webkit-box-shadow: 0 0 5px #999;
+    box-shadow: 0 0 5px #999;
+    border-radius: 12px;
+}
+
+section .in-card img{
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+section .in-card p{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+section .button-start{
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+section .button-start button{
+    background: #F19820;
+    border: none;
+    padding: 15px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+section .button-start button:hover{
+    color: #F19820;
+    background: #003057;
+    transition: 0.5s;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #003057;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    background: #F19820;
+}
+
+footer .text{
+    margin-bottom: 10px;
+}
+
+.icons a{
+    font-size: 24px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #38678b;
+    transition: 0.5s ease-in-out;
+}
+
+.icons a:hover{
+    color: #003057;
+    transition: 0.5s;
+}
