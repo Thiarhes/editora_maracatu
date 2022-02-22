@@ -113,7 +113,7 @@ section h2{
 .input-email label{
     display: block;
     margin-left: 25px;
-    font-size: min(vw, 1rem);
+    font-size: min(4vw, 1.3rem);
 }
 
 .input-email input{
@@ -139,6 +139,7 @@ section h2{
     margin-left: 25px;
     margin-bottom: 20px;
     width: 55%;
+    font-size: min(4vw, 1.3rem);
 }
 
 .input-select select{
@@ -174,6 +175,7 @@ section h2{
 
 .input-group span{
     margin-left: 25px;
+    font-size: min(4vw, 1.3rem);
 }
 
 .button{
