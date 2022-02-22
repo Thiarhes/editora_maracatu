@@ -145,7 +145,7 @@ section h2{
 .input-email label{
     display: block;
     margin-left: 25px;
-    font-size: min(4vw, 1rem);
+    font-size: min(4vw, 1.3rem);
 }
 
 .input-email input{
