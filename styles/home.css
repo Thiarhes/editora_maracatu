@@ -46,7 +46,7 @@ nav .button-link{
     margin-right: 50px;
     text-decoration: none;
     font-weight: 600;
-    font-size: min(5vw, 1rem);
+    font-size: min(4.5vw, 1.2rem);
     text-transform: uppercase;
     color: #003057;
     opacity: 0.8;
