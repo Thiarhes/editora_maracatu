@@ -85,7 +85,6 @@ main .head-large{
 
 .strong-text{
     color: #fccfa2;
-    /* color: #011e35; */
     font-size: 26px;
 }
 
@@ -98,7 +97,7 @@ main .head-large{
 }
 
 .in-second-header{
-    font-size: 24px;
+    font-size: min(3.5vw, 1.8rem);
     text-align: center;
 }
 
@@ -107,8 +106,8 @@ section{
 }
 
 section .mid-title{
-    margin: 120px 0 120px 90px;
-    font-size: 48px;
+    margin: 120px 0 120px 100px;
+    font-size: min(7vw, 3.6rem);
 }
 
 section .section-cards{
@@ -190,4 +189,19 @@ footer .text{
 .icons a:hover{
     color: #003057;
     transition: 0.5s;
+}
+
+
+
+@media (max-width:912px){
+    section .section-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section .in-card{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
 }

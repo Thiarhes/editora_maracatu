@@ -6,6 +6,7 @@
 
 body{
     font-family: "Open Sans",sans-serif;
+    /* height: 100vh; */
     /* Photo by Jess Bailey on Unsplash */
     background-image: url('../img/fundo.jpg');
     background-repeat: no-repeat;
@@ -47,7 +48,6 @@ nav .button-link{
     margin-right: 50px;
     text-decoration: none;
     font-weight: 600;
-    text-transform: uppercase;
     color: #003057;
     opacity: 0.8;
     transition: 0.5s ease-in-out;
@@ -222,8 +222,50 @@ footer .text{
     transition: 0.5s;
 }
 
+#confirm {
+    display: none;
+    background-color: #F3F5F6;
+    color: #003057;
+    border: none;
+    background: #F19820;
+    position: fixed;
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    left: 38%;
+    top: 20%;
+    box-sizing: border-box;
+    text-align: center;
+ }
+ #confirm button {
+    cursor: pointer;
+    border: none;
+    background: #003057;
+    width: 60px;
+    border-radius: 4px;
+    padding: 8px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+ }
 
+ #confirm button:hover{
+    background: #0a4d85;
+    border-radius: 16px;
+    transition: 0.5s;
+ }
 
+ #confirm .message {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+    padding: 5px;
+    margin-bottom: 20px;
+ }
+/* Responsividade */
 @media(min-width:768px) and (max-width:1024px){
     footer{
         margin-top: 30px;
@@ -286,7 +328,7 @@ footer .text{
         font-size: 15px;    
     }
 }
-@media(max-width:912px) {
+@media(min-width:912px) and (max-width:1368px){
     header{
         height: 130px;
     }
