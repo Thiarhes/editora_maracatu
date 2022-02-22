@@ -61,7 +61,7 @@ nav .button-link{
     position: relative;
     margin-right: 50px;
     text-decoration: none;
-    font-size: min(4vw, 1.2rem);
+    font-size: min(4.5vw, 1.2rem);
     font-weight: 600;
     text-transform: uppercase;
     color: #003057;
@@ -264,9 +264,10 @@ footer .text{
         display: flex;
         justify-content: space-around;
     }
-    nav img{
+    nav .img-link{
         position: relative;
-        width: 150px;
+        width: 140px;
+        margin-left: -25px;
     }
     footer{
         position: relative;

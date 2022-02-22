@@ -51,7 +51,7 @@ nav .button-link{
     text-transform: uppercase;
     color: #003057;
     opacity: 0.8;
-    font-size: min(4vw, 1.2rem);
+    font-size: min(4.5vw, 1.2rem);
     transition: 0.5s ease-in-out;
 }
 
@@ -230,44 +230,27 @@ footer .text{
 
 
 
-@media(min-width:768px) and (max-width:1024px){
-    footer{
-        margin-top: 30px;
-    }
-    #form{
-        max-width: 380px;
-        padding: 5px;
-        margin-top: 30px;
-    }
-    #form .form{
-        margin: 20px; 
-    }
-    
-}
-@media(min-width:820px) and (max-width:1180px){
-    footer{
-        margin-top: 70px;
-    }
-    #form{
-        max-width: 420px;
-        padding: 5px;
-        margin-top: 50px;
-    }
-    #form .form{
-        margin: 20px; 
-    }
-    
-}
 @media(max-width:912px) {
     header{
         height: 90px;
+    }
+    nav div{
+        display: flex;
+        align-items: center;
+        max-width: 200px;
+    }
+    nav .button-link{
+        margin-right: 30px;
+    }
+    nav .img-link{
+        margin-left: 20px;
     }
     nav img{
         width: 150px;
     }
     footer{
         margin-top: 100px;
-        height: 140px;
+        height: 150px;
     }
     .icons a{
         font-size: 30px;
@@ -283,49 +266,5 @@ footer .text{
     }
     .input-select select{
         max-width: 150px;
-    }
-    
-}
-@media(min-width:1440px){
-    header{
-        height: 130px;
-    }
-    nav img{
-        width: 230px;
-    }
-    footer{
-        margin-top: 260px;
-        height: 140px;
-    }
-    .icons a{
-        font-size: 30px;
-    }
-    #form{
-        max-width: 540px;
-        max-height: 950px;
-        padding: 5px;
-        margin-top: 150px;
-    }
-    #form .form{
-        margin: 20px; 
-    }
-    .input-group label{
-        font-size: 30px;
-    }
-    .input-email label{
-        font-size: 30px;
-    }
-    .input-select{
-        font-size: 30px;
-    }
-    .input-select select{
-        font-size: 20px;
-        max-width: 150px;
-    }
-    .input-group span{
-        font-size: 30px;
-    }
-    .button input{
-        font-size: 20px;    
     }
 }
