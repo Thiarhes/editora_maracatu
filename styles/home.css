@@ -197,6 +197,9 @@ footer .text{
 
 
 @media (max-width:912px){
+    header{
+        height: 90px;
+    }
     nav .img-link{
         margin-left: 10px;
     }
